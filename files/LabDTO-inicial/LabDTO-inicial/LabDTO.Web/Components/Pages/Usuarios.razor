@@ -1,0 +1,61 @@
+@page "/usuarios"
+@rendermode InteractiveServer
+@using LabDTO.Domain
+@using LabDTO.BusinessLogic
+@inject UsuarioServicio Servicio
+
+<PageTitle>Usuarios</PageTitle>
+
+<h1>Usuarios registrados</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var u in Servicio.Listar())
+        {
+            <tr>
+                <td>@u.Id</td>
+                <td>@u.Nombre</td>
+                <td>@u.Email</td>
+                <td>@u.Password</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Agregar usuario</h2>
+
+<div class="form">
+    <input class="form-control" @bind="nombreNuevo" @bind:event="oninput" placeholder="Nombre" />
+    <input class="form-control" @bind="emailNuevo" @bind:event="oninput" placeholder="Email" />
+    <button class="btn btn-primary" @onclick="Agregar">Agregar</button>
+</div>
+
+@code {
+    private string nombreNuevo = "";
+    private string emailNuevo = "";
+
+    private void Agregar()
+    {
+        if (string.IsNullOrWhiteSpace(nombreNuevo) || string.IsNullOrWhiteSpace(emailNuevo)) return;
+
+        var usuario = new Usuario
+        {
+            Nombre = nombreNuevo,
+            Email = emailNuevo,
+            Password = "cambiar123"
+        };
+
+        Servicio.Agregar(usuario);
+
+        nombreNuevo = "";
+        emailNuevo = "";
+    }
+}

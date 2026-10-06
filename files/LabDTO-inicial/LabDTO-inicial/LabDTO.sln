@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDTO.Web", "LabDTO.Web\LabDTO.Web.csproj", "{8B2F4C1E-6A3D-4F7B-9C2E-1D5A7E3B9F40}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDTO.BusinessLogic", "LabDTO.BusinessLogic\LabDTO.BusinessLogic.csproj", "{3C7A9E21-4B5D-4E8F-A1C2-7D9B3E5F1A62}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LabDTO.Domain", "LabDTO.Domain\LabDTO.Domain.csproj", "{5E1B7C93-2F4A-4D6E-B8C1-9A3F5D7E2B84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B2F4C1E-6A3D-4F7B-9C2E-1D5A7E3B9F40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2F4C1E-6A3D-4F7B-9C2E-1D5A7E3B9F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2F4C1E-6A3D-4F7B-9C2E-1D5A7E3B9F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2F4C1E-6A3D-4F7B-9C2E-1D5A7E3B9F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C7A9E21-4B5D-4E8F-A1C2-7D9B3E5F1A62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C7A9E21-4B5D-4E8F-A1C2-7D9B3E5F1A62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C7A9E21-4B5D-4E8F-A1C2-7D9B3E5F1A62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C7A9E21-4B5D-4E8F-A1C2-7D9B3E5F1A62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E1B7C93-2F4A-4D6E-B8C1-9A3F5D7E2B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E1B7C93-2F4A-4D6E-B8C1-9A3F5D7E2B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E1B7C93-2F4A-4D6E-B8C1-9A3F5D7E2B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E1B7C93-2F4A-4D6E-B8C1-9A3F5D7E2B84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
